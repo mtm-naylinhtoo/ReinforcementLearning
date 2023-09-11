@@ -12,7 +12,7 @@ for episode in range(1, episodes+1):
   done = False
   score = 0
 
-  while True:
+  while not done:
     action = random.choice([0,1])
     _, reward, done, _ = env.step(action)
     score += reward
